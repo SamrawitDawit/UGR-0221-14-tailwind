@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>contact page</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div id="menu-icon">
+                <img src="images/menu.svg" alt="">
+            </div>
+            <ul id="menu-list" style="display: none;">
+                <li><a href="home.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <form action="process_form.php" method="POST">
+            <div><input type="text" id="name" name="name" placeholder="your name" required></div>
+            <br>
+            <div><input type="email" id="email" name="email" placeholder="your email" required></div>
+            <br>
+            <div><textarea id="message" name="message" placeholder="your message" required></textarea></div>
+            <br>
+            <div><input type="submit" value="Submit"></div>
+        </form>
+    </main>
+    <footer>
+        <nav>
+            <ul>
+                <li><a href="mailto:samrikdawit@gmail.com"><img src="images/gmail.svg" alt=""></a></li>
+                <li><a href="https://www.linkedin.com/in/samrawit-dawit-59a5b4250/"><img src="images/linkedin.svg"
+                            alt=""></a></li>
+                <li><a href="https://t.me/SamrawitDawit"><img src="images/telegram.svg" alt=""></a></li>
+            </ul>
+        </nav>
+        <p>&copy; 2023 Samrawit Dawit. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>
