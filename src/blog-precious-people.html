@@ -5,51 +5,85 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>precious people around us</title>
+    <link rel="stylesheet" href="dist/output.css">
 </head>
 
-<body>
-    <header>
-        <nav>
-            <div id="menu-icon">
-                <img src="images/menu.svg" alt="">
+<body class="flex flex-col min-h-screen font-mono">
+    <header class="fixed w-full bg-gray-800 py-4">
+        <div class="container mx-auto flex sm:justify-around md:justify-end justify-end items-center">
+            <nav class="menuList hidden sm:block">
+                <ul class="text-center sm:space-x-16 md:space-x-10 text-md md:text-xl text-white">
+                    <li class="block mr-48 sm:mr-0 mb-4 sm:mb-0 sm:inline-block hover:bg-white hover:text-black p-1">
+                        <a href="home.html">Home</a>
+                    </li>
+                    <li class="block mr-48 sm:mr-0 mb-4 sm:mb-0 sm:inline-block hover:bg-white hover:text-black p-1">
+                        <a href="about.html">About</a>
+                    </li>
+                    <li class="block mr-48 sm:mr-0 mb-4 sm:mb-0 sm:inline-block hover:bg-white hover:text-black p-1">
+                        <a href="portfolio.html">Porfolio</a>
+                    </li>
+                    <li class="block mr-48 sm:mr-0 mb-4 sm:mb-0 sm:inline-block hover:bg-white hover:text-black p-1">
+                        <a href="blog-list.html">Blogs</a>
+                    </li>
+                    <li class="block mr-48 sm:mr-0 mb-4 sm:mb-0 sm:inline-block hover:bg-white hover:text-black p-1">
+                        <a href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="sm:hidden mr-8">
+                <button id="menuIcon">
+                    <img src="images/menu-svgrepo-com.svg" class="w-6 h-6" alt="">
+                </button>
             </div>
-            <ul id="menu-list" style="display: none;">
-                <li><a href="home.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="portfolio.html">Portfolio</a></li>
-                <li><a href="blog.html">Blog</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
+        </div>
     </header>
     <main>
-        <article>
-            <h1>Precious People Around us</h1>
-            <p>Have you ever had the pleasure of meeting someone who, after just a 2 hrs conversation, made you
-                feel like you've read an entire book? Every word they speak is filled with truth and wisdom, and
-                their
-                calming presence brings a sense of peace to your soul. You can't help but wish they were a part of
-                your
-                family, so that you can listen to the golden advices that flows from their lips every single day.
-                I've
-                never felt such genuine happiness as I did after being advised for a solid two hours.</p>
-        </article>
-        <div><a href="blog-list.html" class="callToActionButton">Other Posts</a></div>
-        <div><a href="https://samrawit.substack.com/">Follow me on Substack</a></div>
+        <div class="flex-grow mx-24 sm:mx-32 md-mx-48 mt-32 mb-16">
+            <div class="blog-content bg-white border border-gray-300 rounded-lg p-6">
+                <h2 class="text-2xl font-semibold mb-4">Precious People Around Us</h2>
+                <div class="flex justify-end mb-10">
+                    <p>Jul 4 2022</p>
+                </div>
+                <div class="blog-body">
+                    Have you ever had the pleasure of meeting someone who, after just a 2 hrs conversation, made you
+                    feel like you've read an entire book? Every word they speak is filled with truth and wisdom, and
+                    their
+                    calming presence brings a sense of peace to your soul. You can't help but wish they were a part
+                    of
+                    your
+                    family, so that you can listen to the golden advices that flows from their lips every single
+                    day.
+                    I've
+                    never felt such genuine happiness as I did after being advised for a solid two hours.
+                </div>
+            </div>
+            <div class="flex flex-col justify-center items-center mt-10">
+                <div class="links bg-gray-500 hover:bg-gray-800 text-white font-bold py-2 px-4 rounded mb-4"><a
+                        href="blog-list.html" class="callToActionButton">Other Posts</a></div>
+                <div class="links bg-gray-500 hover:bg-gray-800 text-white font-bold py-2 px-4 rounded mb-4"><a
+                        href="https://samrawit.substack.com/">Follow me on Substack</a></div>
+            </div>
+        </div>
     </main>
-    <footer>
-        <nav>
-            <ul>
-                <li><a href="mailto:samrikdawit@gmail.com"><img src="images/gmail.svg" alt=""></a>
-                </li>
-                <li><a href="https://www.linkedin.com/in/samrawit-dawit-59a5b4250/"><img src="images/linkedin.svg"
-                            alt=""></a></li>
-                <li><a href="https://t.me/SamrawitDawit"><img src="images/telegram.svg" alt=""></a>
-                </li>
-            </ul>
-        </nav>
-        <p>&copy; 2023 Samrawit Dawit. All rights reserved.</p>
+    <footer class="bg-gray-800 text-white p-5 mt-4">
+        <div class="flex items-center justify-around">
+            <nav class="footer__navigation">
+                <ul class="sm:flex mr-5 justify-between">
+                    <li><a href="mailto:samrikdawit@gmail.com"><img src="images/gmail.svg" class="w-10 h-10" alt=""></a>
+                    </li>
+                    <li class=" my-2 sm:mx-6 sm:my-0"><a
+                            href="https://www.linkedin.com/in/samrawit-dawit-59a5b4250/"><img src="images/linkedin.svg"
+                                class="w-10 h-10" alt=""></a></li>
+                    <li><a href="https://t.me/SamrawitDawit"><img src="images/telegram.svg" class="w-10 h-10"
+                                alt=""></a>
+                    </li>
+                </ul>
+            </nav>
+            <p class=" text-md md:text-lg footer__copyRight">&copy; 2023 Samrawit Dawit. All rights reserved.</p>
+        </div>
+
     </footer>
+    <script src="JS/script.js"></script>
 </body>
 
 </html>

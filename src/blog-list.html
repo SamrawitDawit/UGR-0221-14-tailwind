@@ -5,48 +5,77 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>blog list</title>
+    <link rel="stylesheet" href="dist/output.css">
 </head>
 
-
-
-<body>
-    <header>
-        <nav>
-            <div id="menu-icon">
-                <img src="images/menu.svg" alt="">
+<body class="flex flex-col min-h-screen font-mono">
+    <header class="fixed w-full bg-gray-800 py-4">
+        <div class="container mx-auto flex sm:justify-around md:justify-end justify-end items-center">
+            <nav class="menuList hidden sm:block">
+                <ul class="text-center sm:space-x-16 md:space-x-10 text-md md:text-xl text-white">
+                    <li class="block mr-48 sm:mr-0 mb-4 sm:mb-0 sm:inline-block hover:bg-white hover:text-black p-1">
+                        <a href="home.html">Home</a>
+                    </li>
+                    <li class="block mr-48 sm:mr-0 mb-4 sm:mb-0 sm:inline-block hover:bg-white hover:text-black p-1">
+                        <a href="about.html">About</a>
+                    </li>
+                    <li class="block mr-48 sm:mr-0 mb-4 sm:mb-0 sm:inline-block hover:bg-white hover:text-black p-1">
+                        <a href="portfolio.html">Porfolio</a>
+                    </li>
+                    <li class="block mr-48 sm:mr-0 mb-4 sm:mb-0 sm:inline-block hover:bg-white hover:text-black p-1">
+                        <a href="blog-list.html">Blogs</a>
+                    </li>
+                    <li class="block mr-48 sm:mr-0 mb-4 sm:mb-0 sm:inline-block hover:bg-white hover:text-black p-1">
+                        <a href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="sm:hidden mr-8">
+                <button id="menuIcon">
+                    <img src="images/menu-svgrepo-com.svg" class="w-6 h-6" alt="">
+                </button>
             </div>
-            <ul id="menu-list" style="display: none;">
-                <li><a href="home.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="portfolio.html">Portfolio</a></li>
-                <li><a href="blog.html">Blog</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <div class="blog-card">
-            <h2>Embrace honesty with yourself</h2>
-            <p>Confront your emotions, even if they seem... <a href="blog-embrace-honesty.html">Read More</a></p>
         </div>
-        <div class="blog-card">
-            <h2>Precious people around us</h2>
-            <p>Have you ever had the pleasure of meeting...<a href="blog-post-2.html">Read More</a></p>
+    </header>
+    <main class="flex-grow mt-16 mb-10">
+        <div class="blog-card bg-white border border-gray-300 p-6">
+            <h2 class="text-xl font-semibold mb-4">Embrace honesty with yourself</h2>
+            <div class="links card">
+                <div class="flex justify-between text-gray-700 mb-4">Confront your emotions, even if they seem...<a
+                        href="blog-embrace-honesty.html" class="text-blue-500 font-semibold hover:text-blue-600">Read
+                        More</a></div>
+            </div>
+        </div>
+        <div class="blog-card bg-white border border-gray-300 p-6 mb-6">
+            <h2 class="text-xl font-semibold mb-4">Precious people around us</h2>
+            <div class="links card">
+                <div class="flex justify-between text-gray-700 mb-4">Have you ever had the pleasure of
+                    meeting...<a href="blog-precious-people.html"
+                        class=" text-blue-500 font-semibold hover:text-blue-600">Read
+                        More</a>
+                </div>
+            </div>
         </div>
     </main>
-    <footer>
-        <nav>
-            <ul>
-                <li><a href="mailto:samrikdawit@gmail.com"><img src="images/gmail.svg" alt=""></a>
-                </li>
-                <li><a href="https://www.linkedin.com/in/samrawit-dawit-59a5b4250/"><img src="images/linkedin.svg"
-                            alt=""></a></li>
-                <li><a href="https://t.me/SamrawitDawit"><img src="images/telegram.svg" alt=""></a>
-                </li>
-            </ul>
-        </nav>
-        <p>&copy; 2023 Samrawit Dawit. All rights reserved.</p>
+    <footer class="bg-gray-800 text-white p-5 mt-4">
+        <div class="flex items-center justify-around">
+            <nav class="footer__navigation">
+                <ul class="sm:flex mr-5 justify-between">
+                    <li><a href="mailto:samrikdawit@gmail.com"><img src="images/gmail.svg" class="w-10 h-10" alt=""></a>
+                    </li>
+                    <li class=" my-2 sm:mx-6 sm:my-0"><a
+                            href="https://www.linkedin.com/in/samrawit-dawit-59a5b4250/"><img src="images/linkedin.svg"
+                                class="w-10 h-10" alt=""></a></li>
+                    <li><a href="https://t.me/SamrawitDawit"><img src="images/telegram.svg" class="w-10 h-10"
+                                alt=""></a>
+                    </li>
+                </ul>
+            </nav>
+            <p class=" text-md md:text-lg footer__copyRight">&copy; 2023 Samrawit Dawit. All rights reserved.</p>
+        </div>
+
     </footer>
+    <script src="JS/script.js"></script>
 </body>
 
 </html>

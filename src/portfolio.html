@@ -5,68 +5,137 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>portfolio page</title>
+    <link rel="stylesheet" href="dist/output.css">
 </head>
 
-<body>
-    <header>
-        <nav>
-            <div id="menu-icon">
-                <img src="images/menu.svg" alt="">
+<body class="flex flex-col min-h-screen font-mono">
+    <header class="fixed w-full bg-gray-800 py-4">
+        <div class="container mx-auto flex sm:justify-around md:justify-end justify-end items-center">
+            <nav class="menuList hidden sm:block">
+                <ul class="text-center sm:space-x-16 md:space-x-10 text-md md:text-xl text-white">
+                    <li class="block mr-48 sm:mr-0 mb-4 sm:mb-0 sm:inline-block hover:bg-white hover:text-black p-1">
+                        <a href="home.html">Home</a>
+                    </li>
+                    <li class="block mr-48 sm:mr-0 mb-4 sm:mb-0 sm:inline-block hover:bg-white hover:text-black p-1">
+                        <a href="about.html">About</a>
+                    </li>
+                    <li class="block mr-48 sm:mr-0 mb-4 sm:mb-0 sm:inline-block hover:bg-white hover:text-black p-1">
+                        <a href="portfolio.html">Porfolio</a>
+                    </li>
+                    <li class="block mr-48 sm:mr-0 mb-4 sm:mb-0 sm:inline-block hover:bg-white hover:text-black p-1">
+                        <a href="blog-list.html">Blogs</a>
+                    </li>
+                    <li class="block mr-48 sm:mr-0 mb-4 sm:mb-0 sm:inline-block hover:bg-white hover:text-black p-1">
+                        <a href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="sm:hidden mr-8">
+                <button id="menuIcon">
+                    <img src="images/menu-svgrepo-com.svg" class="w-6 h-6" alt="">
+                </button>
             </div>
-            <ul id="menu-list" style="display: none;">
-                <li><a href="home.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="portfolio.html">Portfolio</a></li>
-                <li><a href="blog.html">Blog</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <div>
-            <figure><img src="images/portfolio1.PNG" alt="">
-                <figcaption>Design of Nostock ERP</figcaption>
-            </figure>
-            <div><img src="images/drop-down.svg" alt=""></div>
-            <div><a
-                    href="https://www.figma.com/file/EBlwvDFjsBKjX0B0USBorP/my-page?type=design&mode=design&t=niXDAs0FE0ntMKXy-1">Go
-                    to the project</a></div>
         </div>
-        <div>
-            <div>
-                <figure><img src="images/portfolio2.PNG" alt="">
+    </header>
+    <main class="flex-grow text-center my-32">
+        <div class="flex flex-col sm:flex-row sm:flex-wrap justify-around items-center mb-24">
+            <div class="project">
+                <figure><img src="images/portfolio1.PNG" class="w-64 h-64" alt="">
+                    <figcaption>Design of student management system </figcaption>
+                </figure>
+                <div class="dropDown bg-gray-500 hover:bg-gray-800 text-white font-bold py-2 px-4 rounded mb-4">
+                    <div class="drop-down px-4 flex justify-center"><img src="images/drop-down.svg" alt=""
+                            class="dropDown__image w-12 h-8"></div>
+                    <div class="project__description hidden w-64">
+                        Gubae Abdyu is a powerful and comprehensive student management application designed to
+                        streamline and enhance the administrative processes within educational institutions.
+                        With its intuitive interface and feature-rich functionality, Gubae Abdyu aims to
+                        simplify the management of student-related tasks.
+
+                    </div>
+                </div>
+
+                <div
+                    class="callToActionButton links bg-gray-500 hover:bg-gray-800 text-white font-bold py-2 px-4 rounded mb-4">
+                    <a
+                        href="https://www.figma.com/file/EBlwvDFjsBKjX0B0USBorP/my-page?type=design&mode=design&t=niXDAs0FE0ntMKXy-1">Go
+                        to the project</a>
+                </div>
+            </div>
+            <div class="project">
+                <figure><img src="images/portfolio2.PNG" class="w-64 h-64" alt="">
                     <figcaption>Design of Nostock ERP</figcaption>
                 </figure>
+                <div
+                    class="dropDown callToActionButton bg-gray-500 hover:bg-gray-800 text-white font-bold py-2 px-4 rounded mb-4">
+                    <div class="drop-down flex justify-center"><img src="images/drop-down.svg" alt=""
+                            class="dropDown__image w-12 h-8"></div>
+                    <div class="project__description hidden w-64">
+                        Nostock ERP is a cutting-edge system that revolutionizes inventory and supply chain
+                        management. With real-time inventory tracking, accurate demand forecasting, automated
+                        reordering, and seamless supplier management, Nostock optimizes operations and minimizes
+                        stockouts and excess inventory.
+
+                    </div>
+                </div>
+
+                <div
+                    class="callToActionButton links bg-gray-500 hover:bg-gray-800 text-white font-bold py-2 px-4 rounded mb-4">
+                    <a
+                        href="https://www.figma.com/file/RTv8BcpsFLHaVrHFPoyLjk/NoStock-login-page-challenge?type=design&node-id=0%3A1&mode=design&t=niXDAs0FE0ntMKXy-1">Go
+                        to the project</a>
+                </div>
             </div>
-            <div><img src="images/drop-down.svg" alt=""></div>
-            <div><a
-                    href="https://www.figma.com/file/RTv8BcpsFLHaVrHFPoyLjk/NoStock-login-page-challenge?type=design&node-id=0%3A1&mode=design&t=niXDAs0FE0ntMKXy-1">Go
-                    to the project</a></div>
-        </div>
-        <div>
-            <div>
-                <figure><img src="images/portfolio3.PNG" alt="">
-                    <figcaption>Apple's homepage using html, css and bootsrap</figcaption>
+            <div class="project">
+                <figure><img src="images/portfolio3.PNG" class="w-64 h-64" alt="">
+                    <figcaption>Apple's homepage</figcaption>
                 </figure>
-            </div>
-            <div><img src="images/drop-down.svg" alt=""></div>
-            <div><a href="apple.html">Go to the project</a>
+                <div
+                    class="dropDown callToActionButton bg-gray-500 hover:bg-gray-800 text-white font-bold py-2 px-4 rounded mb-4">
+                    <div class="drop-down flex justify-center"><img src="images/drop-down.svg" alt=""
+                            class=" w-12 h-8 dropDown__image"></div>
+                    <div class="project__description hidden w-64">
+                        Through the use of HTML, CSS, and possibly JavaScript, I have successfully recreated the
+                        structure and visual elements of the Apple homepage. The result is a fully responsive
+                        and interactive webpage that closely resembles the original, ensuring a seamless user
+                        experience across different devices.
+                    </div>
+                </div>
+                <div
+                    class="callToActionButton links bg-gray-500 hover:bg-gray-800 text-white font-bold py-2 px-4 rounded mb-4">
+                    <a href="images/apple.html">Go to the project</a>
+                </div>
             </div>
         </div>
-        <div><a href="contact.html" class="callToActionButton">Contact me</a></div>
-        <div><a href="Resume.pdf" download>My resume</a></div>
+
+        <div class="flex flex-col justify-center items-center">
+            <a href="contact.html" class="bg-gray-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded mb-4">
+                Contact me
+            </a>
+            <a href="images/Resume.pdf" class="bg-gray-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded">
+                My Resume
+            </a>
+        </div>
     </main>
-    <footer>
-        <nav>
-            <ul>
-                <li><a href="mailto:samrikdawit@gmail.com"><img src="images/gmail.svg" alt=""></a></li>
-                <li><a href="https://www.linkedin.com/in/samrawit-dawit-59a5b4250/"><img src="images/linkedin.svg"
-                            alt=""></a></li>
-                <li><a href="https://t.me/SamrawitDawit"><img src="images/telegram.svg" alt=""></a></li>
-            </ul>
-        </nav>
-        <p>&copy; 2023 Samrawit Dawit. All rights reserved.</p>
+    <footer class="bg-gray-800 text-white p-5 mt-4">
+        <div class="flex items-center justify-around">
+            <nav class="footer__navigation">
+                <ul class="sm:flex mr-5 justify-between">
+                    <li><a href="mailto:samrikdawit@gmail.com"><img src="images/gmail.svg" class="w-10 h-10" alt=""></a>
+                    </li>
+                    <li class=" my-2 sm:mx-6 sm:my-0"><a
+                            href="https://www.linkedin.com/in/samrawit-dawit-59a5b4250/"><img src="images/linkedin.svg"
+                                class="w-10 h-10" alt=""></a></li>
+                    <li><a href="https://t.me/SamrawitDawit"><img src="images/telegram.svg" class="w-10 h-10"
+                                alt=""></a>
+                    </li>
+                </ul>
+            </nav>
+            <p class=" text-md md:text-lg footer__copyRight">&copy; 2023 Samrawit Dawit. All rights reserved.</p>
+        </div>
+
     </footer>
+    <script src="JS/script.js"></script>
 </body>
 
 </html>

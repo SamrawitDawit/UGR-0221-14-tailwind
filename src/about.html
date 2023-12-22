@@ -5,123 +5,177 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>about page</title>
+    <link rel="stylesheet" href="dist/output.css">
 </head>
 
-<body>
-    <header>
-        <nav>
-            <div id="menu-icon">
-                <img src="images/menu.svg" alt="">
+
+<body class="flex flex-col min-h-screen font-mono">
+    <header class="fixed w-full bg-gray-800 py-4">
+        <div class="container mx-auto flex sm:justify-around md:justify-end justify-end items-center">
+            <nav class="menuList hidden sm:block">
+                <ul class="text-center sm:space-x-16 md:space-x-10 text-md md:text-xl text-white">
+                    <li class="block mr-48 sm:mr-0 mb-4 sm:mb-0 sm:inline-block hover:bg-white hover:text-black p-1">
+                        <a href="home.html">Home</a>
+                    </li>
+                    <li class="block mr-48 sm:mr-0 mb-4 sm:mb-0 sm:inline-block hover:bg-white hover:text-black p-1">
+                        <a href="about.html">About</a>
+                    </li>
+                    <li class="block mr-48 sm:mr-0 mb-4 sm:mb-0 sm:inline-block hover:bg-white hover:text-black p-1">
+                        <a href="portfolio.html">Porfolio</a>
+                    </li>
+                    <li class="block mr-48 sm:mr-0 mb-4 sm:mb-0 sm:inline-block hover:bg-white hover:text-black p-1">
+                        <a href="blog-list.html">Blogs</a>
+                    </li>
+                    <li class="block mr-48 sm:mr-0 mb-4 sm:mb-0 sm:inline-block hover:bg-white hover:text-black p-1">
+                        <a href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="sm:hidden mr-8">
+                <button id="menuIcon">
+                    <img src="images/menu-svgrepo-com.svg" class="w-6 h-6" alt="">
+                </button>
             </div>
-            <ul id="menu-list" style="display: none;">
-                <li><a href="home.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="portfolio.html">Portfolio</a></li>
-                <li><a href="blog.html">Blog</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
+        </div>
     </header>
-    <main>
-        <div>
-            <hgroup>
-                <h1>Background</h1>
-                <p>I am currently a 3rd year student pursuing a Bachelor's degree in Software Engineering at Addis Ababa
-                    institute of Technology(AAiT).
-                    Throughout my academic journey, I have gained a solid foundation in programming languages such as
-                    Python, Java and Javascript. I have completed coursework in Networking, algorithms, and data
-                    structures, which has provided me with a strong understanding of the fundamentals. Additionally, I
-                    am G5 Software Engineer at A2SV(Africa to Silicon Valley).</p>
-            </hgroup>
+    <main class="flex-grow text-center px-4 mt-20">
+        <div class="flex flex-col itmes-center md:items-start md:w-1/2">
+            <h1 class="text-4xl ml-30 md:ml-5 font-bold my-8">Background</h1>
+            <p><span class="ml-14">I </span>am currently a 3rd year student pursuing a Bachelor's in Software
+                Engineering
+                at
+                Addis
+                Ababa
+                institute of Technology(AAiT).
+                Throughout my academic journey, I have gained a solid foundation in programming languages such
+                as
+                Python, Java and Javascript. I have completed coursework in Networking, algorithms, and data
+                structures, which has provided me with a strong understanding of the fundamentals. Additionally,
+                I
+                am G5 Software Engineer at A2SV(Africa to Silicon Valley).</p>
         </div>
         <div>
-            <h1>Education</h1>
-            <img src="images/download.jfif" alt="">
-            Bachelor of Software Engineering
+            <h1 class="text-4xl font-bold my-8 text-center md:text-right md:mr-48">Education</h1>
+            <div class="flex flex-col sm:flex-row items-center justify-around mb-5">
+                <img src="images/download.jfif" alt="">
+                <div>Bachelor of Software Engineering</div>
+            </div>
+
         </div>
-        <div>
-            <h1>Skill set</h1>
-            <table>
-                <thead>
-                    <tr>
-                        <th>Skills</th>
-                        <th>Levels</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>Python</td>
-                        <td>Intermediate</td>
-                    </tr>
-                    <tr>
-                        <td>Java</td>
-                        <td>Beginner</td>
-                    </tr>
-                    <tr>
-                        <td>Javascript</td>
-                        <td>Beginner</td>
-                    </tr>
-                    <tr>
-                        <td>HTML</td>
-                        <td>Intermediate</td>
-                    </tr>
-                    <tr>
-                        <td>CSS</td>
-                        <td>Beginner</td>
-                    </tr>
-                    <tr>
-                        <td>Bootsrap</td>
-                        <td>Beginner</td>
-                    </tr>
-                    <tr>
-                        <td>Figma</td>
-                        <td>Beginner</td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
-        <div>
-            <aside>
-                <h2>Code site Accounts</h2>
-                <ul>
-                    <li><a href=" https://leetcode.com/SamrawitDawit/">Leetcode</a></li>
-                    <li><a href=" https://www.hackerrank.com/samrikdawit?hr_r=1">Hackerrank</a></li>
-                    <li><a href=" https://codeforces.com/profile/SamrawitDawit">Codeforces</a></li>
-                    <li><a href=" https://github.com/SamrawitDawit">Github</a></li>
+        <h1 class="text-4xl font-bold my-8">Skill Set</h1>
+        <div class="flex md:px-32">
+            <div class="flex-grow">
+                <table class="border border-gray-300">
+                    <thead>
+                        <tr>
+                            <th class="px-2 py-2 border-b border-r">Skills</th>
+                            <th class="px-2 py-2 border-b">Levels</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="px-4 py-2 border-b border-r">Python</td>
+                            <td class="px-4 py-2 border-b">Intermediate</td>
+                        </tr>
+                        <tr>
+                            <td class="px-4 py-2 border-b border-r">Java</td>
+                            <td class="px-4 py-2 border-b">Beginner</td>
+                        </tr>
+                        <tr>
+                            <td class="px-4 py-2 border-b border-r">Javascript</td>
+                            <td class="px-4 py-2 border-b">Beginner</td>
+                        </tr>
+                        <tr>
+                            <td class="px-4 py-2 border-b border-r">HTML</td>
+                            <td class="px-4 py-2 border-b">Intermediate</td>
+                        </tr>
+                        <tr>
+                            <td class="px-4 py-2 border-b border-r">CSS</td>
+                            <td class="px-4 py-2 border-b">Beginner</td>
+                        </tr>
+                        <tr>
+                            <td class="px-4 py-2 border-b border-r">Bootsrap</td>
+                            <td class="px-4 py-2 border-b">Beginner</td>
+                        </tr>
+                        <tr>
+                            <td class="px-4 py-2 border-b border-r">Figma</td>
+                            <td class="px-4 py-2 border-b">Beginner</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <aside class="w-1/4 h-1/2 bg-yellow-100 shadow-lg border border-gray-300 p-4">
+                <h2 class="text-xl font-bold mb-4">Code site Accounts</h2>
+                <ul class="links">
+                    <li class="mb-2 text-blue-500 hover:text-blue-700 hover:underline"><a
+                            href=" https://leetcode.com/SamrawitDawit/">Leetcode</a></li>
+                    <li class="mb-2 text-blue-500 hover:text-blue-700 hover:underline"><a
+                            href=" https://www.hackerrank.com/samrikdawit?hr_r=1">Hackerrank</a>
+                    </li>
+                    <li class="mb-2 text-blue-500 hover:text-blue-700 hover:underline"><a
+                            href=" https://codeforces.com/profile/SamrawitDawit">Codeforces</a>
+                    </li>
+                    <li class="mb-2 text-blue-500 hover:text-blue-700 hover:underline"><a
+                            href=" https://github.com/SamrawitDawit">Github</a></li>
                 </ul>
             </aside>
         </div>
-        <div><a href="contact.html" class="callToActionButton">Contact me</a></div>
-        <div><a href="portfolio.html" class="callToActionButton">See my works</a></div>
-        <div>
-            <h1>Hobbies</h1>
-            <ul>
-                <li>Reading self help books</li>
-                <li>Exercising</li>
-                <li>Journaling and writting poem</li>
-            </ul>
+        <div class="flex flex-col items-start mt-4 sm:items-end md:mr-32">
+            <a href="contact.html" class="bg-gray-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded mb-4">
+                Contact me
+            </a>
+            <a href="portfolio.html" class="bg-gray-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded">
+                See my works
+            </a>
         </div>
-        <video src="VID_20231126_022625_391.mp4" controls>Your browser does not support the video
-            tag.</video>
+        <div class="flex items-center justify-around">
+            <div class="order-1 sm:order-2 md:order-1"><a href="https://samrawit.substack.com/" target="_blank"
+                    rel="noopener noreferrer"
+                    class="inline-block bg-gray-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded shadow">
+                    Follow me on substack
+                </a></div>
+            <div
+                class=" order-2 sm:order-1 md:order-2 flex flex-col items-start text-center sm:items-center md:items-end md:mr-32 mt-10">
+                <h1 class="text-4xl font-bold my-8">Hobbies</h1>
+                <ul class="hobbyAndContact__hobbyList">
+                    <li class="hobbyAndContact__hobby">Reading self help books</li>
+                    <li class="my-3">Exercising</li>
+                    <li class="hobbyAndContact__hobby">Journaling and writting poem</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="flex justify-center sm:justify-center md:justify-end md:mr-32 my-20"><video class="w-1/2"
+                src="images/VID_20231126_022625_391.mp4" controls>Your
+                browser
+                does not
+                support the video
+                tag.</video></div>
+
         <div>
-            <h2>my favourite quote:</h2>
+            <h2 class="text-2xl font-bold my-4">my favourite quote:</h2>
             <blockquote>The more control you have over your attention, the more control you have
                 over your future. <cite>James Clear</cite></blockquote>
         </div>
-
     </main>
-    <footer>
-        <nav>
-            <ul>
-                <li><a href="mailto:samrikdawit@gmail.com"><img src="images/gmail.svg" alt=""></a></li>
-                <li><a href="https://www.linkedin.com/in/samrawit-dawit-59a5b4250/"><img src="images/linkedin.svg"
-                            alt=""></a></li>
-                <li><a href="https://t.me/SamrawitDawit"><img src="images/telegram.svg" alt=""></a></li>
-            </ul>
-        </nav>
-        <p>&copy; 2023 Samrawit Dawit. All rights reserved.</p>
+    <footer class="bg-gray-800 text-white p-5 mt-16">
+        <div class="flex items-center justify-around">
+            <nav class="footer__navigation">
+                <ul class="sm:flex mr-5 justify-between">
+                    <li><a href="mailto:samrikdawit@gmail.com"><img src="images/gmail.svg" class="w-10 h-10" alt=""></a>
+                    </li>
+                    <li class=" my-2 sm:mx-6 sm:my-0"><a
+                            href="https://www.linkedin.com/in/samrawit-dawit-59a5b4250/"><img src="images/linkedin.svg"
+                                class="w-10 h-10" alt=""></a></li>
+                    <li><a href="https://t.me/SamrawitDawit"><img src="images/telegram.svg" class="w-10 h-10"
+                                alt=""></a>
+                    </li>
+                </ul>
+            </nav>
+            <p class=" text-md md:text-lg footer__copyRight">&copy; 2023 Samrawit Dawit. All rights reserved.</p>
+        </div>
     </footer>
+    <script src="JS/script.js"></script>
 </body>
-
 
 </html>
